@@ -3,6 +3,7 @@
     <head>
         <title>Unit Conversions</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -32,7 +33,7 @@
                             <label for="Temperature">Celsius</label> <br/>
                             <input type ="number" id="c"> <br/>
                             
-                            <button id="temperature"> Convert </button> <br/>
+                            <button id="temperature" onclick="tempConvert()"> Convert </button> <br/>
 
                             <input type = "number" id="f"> <br/>
                             <label for="Temperature">Farenheit</label>
@@ -52,7 +53,7 @@
                 <div id = "wgt">
                     <figure>
                         <img src = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width = "200px" />
-                        <figcaption>Kilograms to Pounds COnversion"</figcaption>
+                        <figcaption>Kilograms to Pounds Conversion"</figcaption>
                     </figure>
 
                     <article>
@@ -62,7 +63,7 @@
                             <label for="Weight">Kilograms</label> <br/>
                             <input type = "number" id = "k"> <br/>
 
-                            <button id = "weight">Convert</button> <br/>
+                            <button id = "weight" onclick="weightConvert()">Convert</button> <br/>
 
                             <input type = number id="p"> <br/>
                             <label for ="Weight">Pounds</label>
@@ -81,7 +82,7 @@
                 <div id ="dst">
                     <figure>
                         <img src = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width = 200px />
-                        <figcaption>Kilometer to Mile COnversion</figcaption>
+                        <figcaption>Kilometer to Mile Conversion</figcaption>
                     </figure>
 
                     <article>
@@ -91,15 +92,14 @@
                             <label for = "Distance">Kilometers</label> <br/>
                             <input type = "number" id ="km"> <br/> 
 
-                            <button id ="distance">Convert</button>
+                            <button id ="distance" onclick="distanceConvert()">Convert</button>
 
                             <input type = "number" id = m> <br/>
                             <label for="Distance">Miles</label>
-
-                        <fieldset>
+                        </fieldset>
                     </article>
                     <aside>
-                        To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km &divide; 1.609
+                        To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km & divide; 1.609
                     </aside>
                 </div>
             </section>
